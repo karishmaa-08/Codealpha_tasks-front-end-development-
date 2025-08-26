@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 class="gallery-title">Image Gallery</h1>
+
+  <!-- Filter Buttons -->
+  <div class="filter-buttons">
+    <button data-filter="all" class="active">All</button>
+    <button data-filter="nature">Nature</button>
+    <button data-filter="city">City</button>
+    <button data-filter="animal">Animals</button>
+  </div>
+
+  <!-- Image Grid -->
+  <div class="gallery">
+
+    <!-- Nature Images -->
+    <div class="image-item" data-category="nature"><img src="images/nature1.jpg" alt="Nature 1" /></div>
+    <div class="image-item" data-category="nature"><img src="images/nature2.jpg" alt="Nature 2" /></div>
+    <div class="image-item" data-category="nature"><img src="images/nature3.jpg" alt="Nature 3" /></div>
+    <div class="image-item" data-category="nature"><img src="images/nature4.jpg" alt="Nature 4" /></div>
+    <div class="image-item" data-category="nature"><img src="images/nature5.jpg" alt="Nature 5" /></div>
+    <div class="image-item" data-category="nature"><img src="images/nature6.jpg" alt="Nature 6" /></div>
+    <div class="image-item" data-category="nature"><img src="images/nature7.jpg" alt="Nature 7" /></div>
+    <div class="image-item" data-category="nature"><img src="images/nature8.jpg" alt="Nature 8" /></div>
+
+    <!-- City Images -->
+    <div class="image-item" data-category="city"><img src="images/city1.jpg" alt="City 1" /></div>
+    <div class="image-item" data-category="city"><img src="images/city2.jpg" alt="City 2" /></div>
+    <div class="image-item" data-category="city"><img src="images/city3.jpg" alt="City 3" /></div>
+    <div class="image-item" data-category="city"><img src="images/city4.jpg" alt="City 4" /></div>
+    <div class="image-item" data-category="city"><img src="images/city5.jpg" alt="City 5" /></div>
+    <div class="image-item" data-category="city"><img src="images/city6.jpg" alt="City 6" /></div>
+    <div class="image-item" data-category="city"><img src="images/city7.jpg" alt="City 7" /></div>
+    <div class="image-item" data-category="city"><img src="images/city8.jpg" alt="City 8" /></div>
+
+    <!-- Animal Images -->
+    <div class="image-item" data-category="animal"><img src="images/animal1.jpg" alt="Animal 1" /></div>
+    <div class="image-item" data-category="animal"><img src="images/animal2.jpg" alt="Animal 2" /></div>
+    <div class="image-item" data-category="animal"><img src="images/animal3.jpg" alt="Animal 3" /></div>
+    <div class="image-item" data-category="animal"><img src="images/animal4.jpg" alt="Animal 4" /></div>
+    <div class="image-item" data-category="animal"><img src="images/animal5.jpg" alt="Animal 5" /></div>
+    <div class="image-item" data-category="animal"><img src="images/animal6.jpg" alt="Animal 6" /></div>
+    <div class="image-item" data-category="animal"><img src="images/animal7.jpg" alt="Animal 7" /></div>
+    <div class="image-item" data-category="animal"><img src="images/animal8.jpg" alt="Animal 8" /></div>
+
+      </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" src="" alt="Large View" />
+    <div class="lightbox-controls">
+      <span class="prev">&#10094;</span>
+      <span class="next">&#10095;</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
