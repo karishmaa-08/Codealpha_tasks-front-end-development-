@@ -1,0 +1,102 @@
+/* ===== Base Page Style ===== */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1e1e1e, #2d2d2d);
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* ===== Title Outside Calculator ===== */
+.main-title {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* ===== Calculator Box ===== */
+.calculator {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  width: 320px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ===== Display ===== */
+#display {
+  width: 100%;
+  height: 65px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-align: right;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+}
+
+/* ===== Buttons Grid ===== */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* ===== Base Button Styles ===== */
+.btn {
+  padding: 20px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+/* ===== Special Buttons ===== */
+.green {
+  background: #22c55e;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.5);
+}
+
+.green:hover {
+  background: #16a34a;
+}
+
+.red {
+  background: #ef4444;
+  color: white;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.5);
+}
+
+.red:hover {
+  background: #dc2626;
+}
+
+/* ===== Zero Button Wide ===== */
+.zero {
+  grid-column: span 2;
+}
