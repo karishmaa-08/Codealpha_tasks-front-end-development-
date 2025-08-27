@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VibeTunes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="app-header">
+    <img src="covers/logo.png" alt="VibeTunes Logo" class="logo">
+    <h1>VibeTunes</h1>
+  </header>
+
+  <!-- Player -->
+  <div class="player">
+    <img id="cover" class="cover" src="covers/default.png" alt="Album Cover">
+    <h2 id="title">Song Title</h2>
+    <h3 id="artist">Artist Name</h3>
+    <audio id="audio" controls></audio>
+
+    <div class="controls">
+      <button id="prev">⏮️</button>
+      <button id="play">▶️</button>
+      <button id="next">⏭️</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
