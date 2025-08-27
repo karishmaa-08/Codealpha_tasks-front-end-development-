@@ -82,7 +82,7 @@ VibeTunes/
 │   ├── cover1.png  
 │   ├── cover2.png  
 │   └── cover3.png  
-│── assets/           # Logo and other static files  
+│── assets/           # Logo and other static files    
 
 
 
